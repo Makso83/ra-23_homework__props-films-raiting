@@ -8,7 +8,7 @@ const Stars = (props) => {
     const starArray = [];
     if (isValid) {
         for (let i = 0; i < props.count; i ++) {
-            starArray.push(<Star key={shortid.generate()}/>)
+            starArray.push(<li><Star key={shortid.generate()}/></li>)
         }
     }
 
